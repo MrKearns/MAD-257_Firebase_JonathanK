@@ -11,6 +11,15 @@
 		811A1B7D299A88DB002C43C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A1B7C299A88DB002C43C2 /* ContentView.swift */; };
 		811A1B7F299A88DD002C43C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811A1B7E299A88DD002C43C2 /* Assets.xcassets */; };
 		811A1B82299A88DD002C43C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811A1B81299A88DD002C43C2 /* Preview Assets.xcassets */; };
+		811A1B8A299A8985002C43C2 /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A1B89299A8985002C43C2 /* TitleRow.swift */; };
+		811A1B8D299A8CD3002C43C2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A1B8C299A8CD3002C43C2 /* Message.swift */; };
+		811A1B8F299A8D4F002C43C2 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A1B8E299A8D4F002C43C2 /* MessageBubble.swift */; };
+		811A1B91299A9698002C43C2 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A1B90299A9698002C43C2 /* MessageField.swift */; };
+		811A1B93299A9BE9002C43C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 811A1B92299A9BE9002C43C2 /* GoogleService-Info.plist */; };
+		811A1B96299A9C72002C43C2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 811A1B95299A9C72002C43C2 /* FirebaseFirestore */; };
+		811A1B98299A9C72002C43C2 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 811A1B97299A9C72002C43C2 /* FirebaseFirestoreSwift */; };
+		811A1B9A299A9E3E002C43C2 /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A1B99299A9E3E002C43C2 /* MessagesManager.swift */; };
+		811A1B9C299AE7F5002C43C2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A1B9B299AE7F5002C43C2 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,13 @@
 		811A1B7C299A88DB002C43C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		811A1B7E299A88DD002C43C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		811A1B81299A88DD002C43C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		811A1B89299A8985002C43C2 /* TitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
+		811A1B8C299A8CD3002C43C2 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		811A1B8E299A8D4F002C43C2 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		811A1B90299A9698002C43C2 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
+		811A1B92299A9BE9002C43C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		811A1B99299A9E3E002C43C2 /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+		811A1B9B299AE7F5002C43C2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811A1B96299A9C72002C43C2 /* FirebaseFirestore in Frameworks */,
+				811A1B98299A9C72002C43C2 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +71,13 @@
 			children = (
 				811A1B7A299A88DB002C43C2 /* MAD_257_Firebase_JonathanKApp.swift */,
 				811A1B7C299A88DB002C43C2 /* ContentView.swift */,
+				811A1B92299A9BE9002C43C2 /* GoogleService-Info.plist */,
+				811A1B8B299A8CC0002C43C2 /* Models */,
+				811A1B88299A8969002C43C2 /* Components */,
 				811A1B7E299A88DD002C43C2 /* Assets.xcassets */,
 				811A1B80299A88DD002C43C2 /* Preview Content */,
+				811A1B99299A9E3E002C43C2 /* MessagesManager.swift */,
+				811A1B9B299AE7F5002C43C2 /* Extensions.swift */,
 			);
 			path = "MAD-257_Firebase_JonathanK";
 			sourceTree = "<group>";
@@ -65,6 +88,24 @@
 				811A1B81299A88DD002C43C2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		811A1B88299A8969002C43C2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				811A1B89299A8985002C43C2 /* TitleRow.swift */,
+				811A1B8E299A8D4F002C43C2 /* MessageBubble.swift */,
+				811A1B90299A9698002C43C2 /* MessageField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		811A1B8B299A8CC0002C43C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				811A1B8C299A8CD3002C43C2 /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +124,10 @@
 			dependencies = (
 			);
 			name = "MAD-257_Firebase_JonathanK";
+			packageProductDependencies = (
+				811A1B95299A9C72002C43C2 /* FirebaseFirestore */,
+				811A1B97299A9C72002C43C2 /* FirebaseFirestoreSwift */,
+			);
 			productName = "MAD-257_Firebase_JonathanK";
 			productReference = 811A1B77299A88DB002C43C2 /* MAD-257_Firebase_JonathanK.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +156,9 @@
 				Base,
 			);
 			mainGroup = 811A1B6E299A88DB002C43C2;
+			packageReferences = (
+				811A1B94299A9C72002C43C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 811A1B78299A88DB002C43C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +175,7 @@
 			files = (
 				811A1B82299A88DD002C43C2 /* Preview Assets.xcassets in Resources */,
 				811A1B7F299A88DD002C43C2 /* Assets.xcassets in Resources */,
+				811A1B93299A9BE9002C43C2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +187,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				811A1B7D299A88DB002C43C2 /* ContentView.swift in Sources */,
+				811A1B8D299A8CD3002C43C2 /* Message.swift in Sources */,
+				811A1B8F299A8D4F002C43C2 /* MessageBubble.swift in Sources */,
+				811A1B9C299AE7F5002C43C2 /* Extensions.swift in Sources */,
 				811A1B7B299A88DB002C43C2 /* MAD_257_Firebase_JonathanKApp.swift in Sources */,
+				811A1B91299A9698002C43C2 /* MessageField.swift in Sources */,
+				811A1B8A299A8985002C43C2 /* TitleRow.swift in Sources */,
+				811A1B9A299A9E3E002C43C2 /* MessagesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +394,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		811A1B94299A9C72002C43C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		811A1B95299A9C72002C43C2 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 811A1B94299A9C72002C43C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		811A1B97299A9C72002C43C2 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 811A1B94299A9C72002C43C2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 811A1B6F299A88DB002C43C2 /* Project object */;
 }
